@@ -1,4 +1,5 @@
 use std::io;
+
 fn read_line() -> String {
     let mut input = String::new();
     io::stdin()
@@ -7,11 +8,16 @@ fn read_line() -> String {
     input.trim().to_string()
 }
 
-fn main(){
-    println!("Enter a date in the format DD/MM/YYYY:");
+fn main() {
+    println!("Enter a date in any format (DD/MM/YYYY, DD-MM-YYYY, DD MM YYYY, DD,MM,YYYY):");
+
     let date = read_line();
 
-    let parts: Vec<&str> = date.split('/').collect();
+    // Split using a closure to handle multiple separators
+    let parts: Vec<&str> = date
+        .split(|c| c == '/' || c == '-' || c == ' ' || c == ',')
+        .collect();
+
     if parts.len() == 3 {
         let day = parts[0];
         let month = parts[1];
@@ -21,6 +27,6 @@ fn main(){
         println!("Month: {}", month);
         println!("Year: {}", year);
     } else {
-        println!("Invalid date format");
+        println!("Invalid date format!");
     }
 }
