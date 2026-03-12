@@ -1,4 +1,5 @@
 use std::io;
+
 fn read_temperature() -> f32 {
     let mut input = String::new();
     io::stdin()

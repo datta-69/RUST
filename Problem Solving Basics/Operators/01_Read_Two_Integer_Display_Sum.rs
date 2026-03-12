@@ -1,4 +1,5 @@
 use std::io;
+
 fn read_integer() -> i32 {
     let mut input = String::new();
     io::stdin()
@@ -12,6 +13,7 @@ fn read_integer() -> i32 {
         }
     }
 }
+
 fn main(){
     println!("Enter the first integer:");
     let num1 = read_integer();
