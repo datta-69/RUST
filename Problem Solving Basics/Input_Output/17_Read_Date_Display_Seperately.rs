@@ -9,8 +9,8 @@ fn read_line() -> String {
 }
 
 fn main() {
+    
     println!("Enter a date in any format (DD/MM/YYYY, DD-MM-YYYY, DD MM YYYY, DD,MM,YYYY):");
-
     let date = read_line();
 
     // Split using a closure to handle multiple separators

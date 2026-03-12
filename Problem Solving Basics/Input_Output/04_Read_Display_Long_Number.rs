@@ -1,4 +1,3 @@
-
 use std::io;
 fn read_long_integer() -> i64 {
     let mut input = String::new();

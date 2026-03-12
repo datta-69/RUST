@@ -1,4 +1,5 @@
 use std::io;
+
 fn read_double_number() ->f64 {
     let mut input = String::new();
     io::stdin().read_line(&mut input).unwrap();

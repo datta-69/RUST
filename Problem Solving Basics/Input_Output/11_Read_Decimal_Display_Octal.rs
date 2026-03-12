@@ -1,10 +1,10 @@
 use std::io;
+
 fn read_decimal() -> u32 {
     let mut input = String::new();
     io::stdin().read_line(&mut input).expect("Failed to read line");
     input.trim().parse::<u32>().expect("Please enter a valid decimal number")
 }
-
 
 fn main(){
 // note: the only appropriate formatting traits are:

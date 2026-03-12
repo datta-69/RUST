@@ -13,6 +13,7 @@ fn read_float() -> f64 {
 }
 
 fn main() {
+
     println!("Enter first number:");
     let n1 = read_integer();
     println!("Enter second number:");
@@ -23,4 +24,5 @@ fn main() {
     println!("Enter a floating-point number:");
     let f1 = read_float();
     println!("You entered the floating-point number: {}", f1);
+    
 }

@@ -1,4 +1,5 @@
 use std::io;
+
 fn read_name() -> String {
     let mut input = String::new();
     io::stdin()

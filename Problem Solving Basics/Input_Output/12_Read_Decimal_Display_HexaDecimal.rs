@@ -1,4 +1,5 @@
 use std::io;
+
 fn read_decimal () ->u32 {
     let mut input = String::new();
     io::stdin().read_line(&mut input).expect("Failed to read line");
